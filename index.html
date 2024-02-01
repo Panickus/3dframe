@@ -6,31 +6,29 @@
    <title>Proyecto Inmersivo con A-Frame</title>
    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
    <script src="https://unpkg.com/aframe-extras/dist/aframe-extras.loaders.min.js"></script>
+   <link rel="stylesheet" href="style.css">
 
-
-   <!-- Aquí puedes añadir más dependencias si son necesarias -->
-   <style>
-      /* Estilos para el botón y cualquier otro estilo personalizado */
-      .enter-button {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         padding: 10px 20px;
-         font-size: 24px;
-         cursor: pointer;
-      }
-   </style>
 </head>
 
 <body>
    <a-scene>
       <a-entity id="rig" position="0 0 0">
-         <a-entity camera="" position="0 2.6 3" wasd-controls="" rotation="36.89848200642503 -33.23155211758775 0"
-            look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
-      </a-entity>
+         <a-entity 
+            camera="" 
+            position="0 2.6 3" 
+            wasd-controls="" 
+            rotation="36.89848200642503 -33.23155211758775 0"
+            look-controls="" 
+            aframe-injected="" 
+            data-aframe-inspector-original-camera=""></a-entity>
+         </a-entity>
 
-      <a-entity gltf-model="assets/panickus.glb" position="1 1 1" scale="1 1 " animation-mixer=""></a-entity>
+         <a-entity 
+            gltf-model="assets/panickus.glb" 
+            position="1 1 1" 
+            scale="1 1 1" 
+            animation-mixer="">
+         </a-entity>
       <!-- Configura aquí la posición y animación del modelo -->
    </a-scene>
    <button class="enter-button" id="enterSceneButton">Escena 3D</button>
